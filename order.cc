@@ -82,6 +82,7 @@ void read_order(Order_class*order)
 		exit(0);
 	}
 	int result;
+    c_order=1;
 	char stl1[100], stl2[100], stl3[100], stl4[100], stl5[100], stl6[100],stl7[100],stl8[100];
 	fscanf(fp1, "%200s", &word);
 	while (!feof(fp1))

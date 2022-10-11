@@ -231,6 +231,7 @@ void read_user(Users_class *users)
 	int result;
 	char stl1[100], stl2[100], stl3[100], stl4[100], stl5[100],stl6[100],stl7[100];
 	char userid[7];
+    a=1;
 	fscanf(fp1, "%200s", &word);
 	while (!feof(fp1))
 	{
