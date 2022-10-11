@@ -21,6 +21,10 @@ class Bidlist_class{
             {
                 return bidlist_cnt;
             }
+     void set_cnt(int i)
+     {
+         bidlist_cnt=i;
+     }
             char* get_buyerid()
             {
                 return buyer_id;
@@ -53,6 +57,14 @@ class Bidlist_class{
             {
                 condition=con;
             }
+            void set_sec(int s)
+            {
+                sec=s;
+            }
+            void set_day(int d)
+            {
+                day=d;
+            }
             void add_cnt()
             {
                 ++bidlist_cnt;
@@ -74,7 +86,7 @@ class Bidlist_class{
             }
 
 };
-void read_bidlist(Bidlist_class *order,const char* src1);
+void read_bidlist(Bidlist_class *order);
 //void Print_orderList(Order_class * order);
-void write_bidlist(Bidlist_class* bidlist, const char* src);
-void Admin_Deletebidlist(Bidlist_class* bidlist,char id[7]);
+void write_bidlist(Bidlist_class* bidlist);
+//void Admin_Deletebidlist(Bidlist_class* bidlist,char id[7]);

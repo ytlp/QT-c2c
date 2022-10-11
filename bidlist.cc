@@ -11,22 +11,22 @@
 using namespace std;
 int Bidlist_class::bidlist_cnt=0;
 
-void Admin_Deletebidlist(Bidlist_class* bidlist,char id[7])
-{
-	int bidlist_cnt=bidlist->get_cnt();
-	for(int i=0;i<bidlist_cnt;++i)
-	{
-		if (strcmp(id, bidlist[i].get_buyerid()) == 0 )
-		{
+//void Admin_Deletebidlist(Bidlist_class* bidlist,char id[7])
+//{
+//	int bidlist_cnt=bidlist->get_cnt();
+//	for(int i=0;i<bidlist_cnt;++i)
+//	{
+//		if (strcmp(id, bidlist[i].get_buyerid()) == 0 )
+//		{
 		
-			bidlist[i].set_condition(1);
-		}
-	}
-	write_bidlist(bidlist,"b.txt");
-}
-void write_bidlist(Bidlist_class* bidlist, const char* src)
+//			bidlist[i].set_condition(1);
+//		}
+//	}
+//	write_bidlist(bidlist,"b.txt");
+//}
+void write_bidlist(Bidlist_class* bidlist)
 {
-	FILE* fp1 = fopen(src, "w");
+    FILE* fp1 = fopen("/home/ytlp/Desktop/bidpf/f.txt", "w");
 
 	if (fp1 == NULL)
 	{
@@ -40,9 +40,9 @@ void write_bidlist(Bidlist_class* bidlist, const char* src)
 	}
 	fclose(fp1);
 }
-void read_bidlist(Bidlist_class*bidlist,const char* src1)
+void read_bidlist(Bidlist_class*bidlist)
 {
-	FILE* fp1 = fopen(src1, "r");
+    FILE* fp1 = fopen("/home/ytlp/Desktop/bidpf/f.txt", "r");
 
 	char word[201];
 	if (fp1 == NULL)

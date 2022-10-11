@@ -1,4 +1,4 @@
 user_id,user_name,key,tele,location,balance,status
-U001,user1,pwd1,11,11,0.0,0
+U001,user1,pwd1,123,Nanjing,10.0,0
 U002,user2,pwd2,11,1,10.0,0
 U003,user3,pwd3,123,1,0.0,0
