@@ -46,3 +46,15 @@ void MainWindow::on_pushButton_3_clicked()//admin
     //this->show();
 
 }
+
+void MainWindow::on_pushButton_clicked()//register
+{
+    user_register=new UsersRegister;
+    user_register->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    user_login=new UserLogin;
+    user_login->show();
+}

@@ -336,6 +336,7 @@ void read_commodity(Commodity_class *commodity)
 		exit(0);
 	}
 	int result;
+    b=1;
 	char stl1[100], stl2[100], stl3[100], stl4[300], stl5[100], stl6[100],stl7[100],stl8[100],stl9[100],stl10[100];
 	fscanf(fp1, "%200s", &word);
 	while (!feof(fp1))

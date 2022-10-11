@@ -5,8 +5,9 @@
 #include <QPushButton>
 #include "adminwidget.h"
 #include "adminlogin.h"
+#include "userlogin.h"
 #include"commodity.h"
-
+#include"usersregister.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -27,9 +28,15 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     Adminlogin * adminlogin;
+    UsersRegister* user_register;
+    UserLogin* user_login;
     //Commodity_class commodity[100];
 
 };
